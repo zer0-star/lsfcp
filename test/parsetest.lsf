@@ -1,0 +1,40 @@
+f (#Point #x #y) = x + y;
+
+main = do {
+  print 2;
+  putStrLn "Hoge";
+  putStrLn "Ho\nge";
+  putStrLn """
+  hoge
+  huga
+  \n
+  """;
+  3;
+  duplicate #x #y <- getLine;
+  putStrLn $ x <> y;
+  print $ if True then 1 else 10 + 5;
+  let {
+    p #x = x == 0;
+    a = 1;
+    #b = a;
+  };
+  return (p b);
+  3 + 29 + f 3 * e #x - wee a (b c $ d) $ hoge;
+  a .b;
+  a.b;
+  a . b;
+  a. b;
+  f a.b x.y.z a.b.c.d.{ x = 10, y = 20, z = a.b + y + c.d };
+  a.b. c;
+  f x.y .z;
+  fields { a = 1, b = 2, c = f x } { a = 2 }.a 4;
+  print let {x = 100} in x + 10;
+  do {
+    print 2;
+  };
+  let {a = do {print 2; ;  ; print 3;;; }} in do { do {a}};
+  fmap ( .x.k ) xs;
+  fmap (.x.k) xs;
+  fmap (.x .k) xs;
+  'x' : "hoge";
+};

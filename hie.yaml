@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "lsfcp:lib"
+
+    - path: "./app"
+      component: "lsfcp:exe:lsfcp"
+
+    - path: "./app/Path_lsfcp"
+      component: "lsfcp:exe:lsfcp"
+
+    - path: "./test"
+      component: "lsfcp:test:lsfcp-test"
